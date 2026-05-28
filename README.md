@@ -137,8 +137,8 @@ Cada planta abastece preferentemente a los centros de menor costo de transporte:
 
 ## Cómo Ejecutar el Modelo
 
-1. Abrir el archivo `opt-proccess-lng.lng` en **LINGO**.
-2. Verificar que `DATASOURCE.xlsx` y `RESULTADOS.xlsx` se encuentren en el **mismo directorio** que el archivo `.lng` (el modelo los referencia con rutas relativas mediante `@OLE`).
+1. Verificar que `DATASOURCE.xlsx` y `RESULTADOS.xlsx` se encuentren en el **mismo directorio** que el archivo `.lng` (el modelo los referencia con rutas relativas mediante `@OLE`).
+1. Abrir el archivo `opt-proccess-lng.lng` en **LINGO**, y los archivos `DATASOURCE.xlsx` y `RESULTADOS.xlsx` (si no están abiertos los Excels, LINGO no puede recuperar información de estos).
 3. Ejecutar el solver (Solve / `Ctrl+S`).
 4. Los resultados se escriben automáticamente en las hojas de `RESULTADOS.xlsx`:
    - `RESULTADOS ENVIOS (X)` — cantidades a enviar por producto, planta y centro.
